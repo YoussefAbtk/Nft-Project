@@ -5,33 +5,6 @@ This is 2 different kinds of NFTs.
 1. An IPFS Hosted NFT
 2. An SVG NFT (Hosted 100% on-chain)
 
-<br/>
-<p align="center">
-<img src="./images/dogNft/pug.png" width="225" alt="NFT Pug">
-<img src="./images/dynamicNft/happy.svg" width="225" alt="NFT Happy">
-<img src="./images/dogNft/shiba-inu.png" width="225" alt="NFT Shiba">
-<img src="./images/dynamicNft/sad.svg" width="225" alt="NFT Frown">
-<img src="./images/dogNft/st-bernard.png" width="225" alt="NFT St.Bernard">
-</p>
-<br/>
-
-- [Foundry NFT](#foundry-nft)
-- [Getting Started](#getting-started)
-  - [Requirements](#requirements)
-  - [Quickstart](#quickstart)
-    - [Optional Gitpod](#optional-gitpod)
-- [Usage](#usage)
-  - [Start a local node](#start-a-local-node)
-  - [Deploy](#deploy)
-  - [Deploy - Other Network](#deploy---other-network)
-  - [Testing](#testing)
-    - [Test Coverage](#test-coverage)
-- [Deployment to a testnet or mainnet](#deployment-to-a-testnet-or-mainnet)
-  - [Scripts](#scripts)
-  - [Base64](#base64)
-  - [Estimate gas](#estimate-gas)
-- [Formatting](#formatting)
-- [Thank you!](#thank-you)
 
 # Getting Started
 
@@ -126,21 +99,6 @@ make deploy ARGS="--network sepolia"
 make deploySvg ARGS="--network sepolia"
 ```
 
-## Scripts
-
-After deploy to a testnet or local net, you can run the scripts.
-
-Using cast deployed locally example:
-
-```
-cast send <RAFFLE_CONTRACT_ADDRESS> "enterRaffle()" --value 0.1ether --private-key <PRIVATE_KEY> --rpc-url $SEPOLIA_RPC_URL
-```
-
-or, to create a ChainlinkVRF Subscription:
-
-```
-make createSubscription ARGS="--network sepolia"
-```
 
 ## Base64
 
